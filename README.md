@@ -4,11 +4,23 @@ Official implementation of [Learning Space-Time Continuous Neural PDEs from Part
 
 ## Installation
 
+To make the code work please run the following commands in that order.
 ```bash
-git clone https://github.com/yakovlev31/LatentNeuralPDEs.git
-cd LatentNeuralPDEs
-pip install -r requirements.txt
-pip install -e .
+git clone https://github.com/yakovlev31/LatentNeuralPDEs.git; 
+cd LatentNeuralPDEs; 
+conda create -n lnpde_env python=3.10; 
+conda activate lnpde_env; 
+conda install -c conda-forge fenics; 
+pip install torch==2.1.0; 
+pip install wandb==0.15.12; 
+pip install tqdm==4.66.1; 
+pip install matplotlib; 
+pip install scipy; 
+pip install scikit-learn; 
+pip install einops; 
+pip install git+https://github.com/rtqichen/torchdiffeq; 
+pip install seaborn; 
+pip install -e .; 
 ```
 
 ## Getting Started
